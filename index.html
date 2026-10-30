@@ -84,7 +84,7 @@
       </div>
       <div class="flex items-center gap-4">
         <span class="text-cyan-400">OJT TARGET: JAN 2027</span>
-        <span class="text-slate-500 font-mono">v2.4.0</span>
+        <span class="text-slate-500 font-mono">v2.5.0</span>
       </div>
     </div>
   </div>
@@ -192,10 +192,28 @@
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT SECTION WITH PROFILE PHOTO -->
   <section id="about" class="py-20 border-b border-slate-800/80 bg-slate-900/30">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-      <div>
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-12 gap-10 items-center">
+      
+      <!-- Profile Photo Container -->
+      <div class="md:col-span-5 lg:col-span-4 flex justify-center">
+        <div class="relative group">
+          <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-60 blur-md group-hover:opacity-100 transition duration-500"></div>
+          
+          <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden bg-slate-950 border border-slate-700 shadow-2xl">
+            <img src="profile.jpg" alt="Justin Arias" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500" />
+            
+            <div class="absolute bottom-3 left-3 right-3 p-2.5 rounded-lg bg-slate-950/85 backdrop-blur-md border border-slate-800 font-mono text-[11px] text-slate-300 flex items-center justify-between">
+              <span>JUSTIN ARIAS</span>
+              <span class="text-cyan-400">DEV // 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Identity & Bio -->
+      <div class="md:col-span-7 lg:col-span-8">
         <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;identity /&gt;</span>
         <h2 class="text-3xl font-extrabold text-white mt-1">Pragmatic Developer &amp; 3D Enthusiast</h2>
         <p class="mt-4 text-slate-400 leading-relaxed text-sm">
@@ -204,31 +222,24 @@
         <p class="mt-3 text-slate-400 leading-relaxed text-sm">
           Beyond writing frontend markup and backend endpoints, I produce clean 3D assets in Blender with optimized geometry and proper edge loops tailored for real-time mobile and web rendering engines.
         </p>
+
+        <!-- Quick Info Badges -->
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs">
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800">
+            <span class="text-slate-500 block text-[10px]">LOCATION</span>
+            <span class="text-slate-200 font-semibold">Lipa City, Batangas</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800">
+            <span class="text-slate-500 block text-[10px]">ACADEMIC STATUS</span>
+            <span class="text-cyan-400 font-semibold">BSIT 4th Year</span>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 col-span-2 sm:col-span-1">
+            <span class="text-slate-500 block text-[10px]">OJT PLACEMENT</span>
+            <span class="text-emerald-400 font-semibold">Starts Jan 2027</span>
+          </div>
+        </div>
       </div>
 
-      <div class="p-6 rounded-2xl bg-slate-950/70 border border-slate-800 shadow-xl font-mono text-xs">
-        <h3 class="text-sm font-bold text-white mb-4 flex items-center gap-2">
-          <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i> Core Capabilities
-        </h3>
-        <ul class="space-y-3 text-slate-300">
-          <li class="flex items-start gap-2.5">
-            <span class="text-cyan-400 font-bold">&gt;</span>
-            <span><strong>Web Applications:</strong> Semantic HTML5, CSS3, modern JavaScript, and Tailwind CSS.</span>
-          </li>
-          <li class="flex items-start gap-2.5">
-            <span class="text-emerald-400 font-bold">&gt;</span>
-            <span><strong>Mobile Systems:</strong> Android Studio development with Java, Firebase DB, and Google ARCore.</span>
-          </li>
-          <li class="flex items-start gap-2.5">
-            <span class="text-violet-400 font-bold">&gt;</span>
-            <span><strong>3D Asset Creation:</strong> Blender modeling, UV unwrapping, topology optimization, and GLB exports.</span>
-          </li>
-          <li class="flex items-start gap-2.5">
-            <span class="text-amber-400 font-bold">&gt;</span>
-            <span><strong>Practices:</strong> ITSM principles, Git/GitHub version control, and cloud resource architecture.</span>
-          </li>
-        </ul>
-      </div>
     </div>
   </section>
 
@@ -431,35 +442,89 @@
     </div>
   </section>
 
-  <!-- TRANSMIT / CONTACT FORM -->
+  <!-- TRANSMIT / CONTACT SECTION -->
   <section id="contact" class="py-24 border-t border-slate-800/80">
-    <div class="max-w-2xl mx-auto px-4">
-      <div class="text-center mb-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-14">
         <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;transmit /&gt;</span>
         <h2 class="text-3xl font-bold text-white">Initialize Connection</h2>
         <p class="text-sm text-slate-400 mt-2">Open for OJT placements, internships, and collaborative software projects.</p>
       </div>
 
-      <div class="p-6 sm:p-8 rounded-xl bg-slate-900/80 border border-slate-800 shadow-2xl">
-        <form onsubmit="handleFormSubmit(event)" class="space-y-4 font-mono text-xs">
-          <div>
-            <label class="block text-slate-400 mb-1">SENDER_NAME:</label>
-            <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 font-sans text-sm" />
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Direct Contact Channels & Verified Details -->
+        <div class="lg:col-span-5 space-y-4 font-mono text-xs">
+          
+          <!-- Direct Email Link -->
+          <a href="mailto:justinarias25snfss@gmail.com" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 flex items-center gap-4 transition group">
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-slate-500 block text-[10px]">DIRECT_EMAIL</span>
+              <span class="text-white group-hover:text-cyan-400 transition-colors font-sans text-sm">justinarias25snfss@gmail.com</span>
+            </div>
+          </a>
+
+          <!-- Mobile Phone Number -->
+          <a href="tel:09381813314" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500/50 flex items-center gap-4 transition group">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-slate-500 block text-[10px]">PHONE // MOBILE</span>
+              <span class="text-white group-hover:text-emerald-400 transition-colors font-sans text-sm">0938 181 3314</span>
+            </div>
+          </a>
+
+          <!-- Geographical Location -->
+          <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 border border-violet-500/20 text-violet-400 flex items-center justify-center">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-slate-500 block text-[10px]">LOCATION</span>
+              <span class="text-white font-sans text-sm">Lipa City, Batangas, Philippines</span>
+            </div>
           </div>
-          <div>
-            <label class="block text-slate-400 mb-1">SENDER_EMAIL:</label>
-            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 font-sans text-sm" />
-          </div>
-          <div>
-            <label class="block text-slate-400 mb-1">PAYLOAD_MESSAGE:</label>
-            <textarea rows="4" required placeholder="State your requirements or inquiry..." class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 font-sans text-sm"></textarea>
-          </div>
-          <button type="submit" class="w-full py-3.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-95 text-slate-950 font-bold transition shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2 tracking-wider">
-            <span>TRANSMIT_DATA()</span>
-            <i data-lucide="send" class="w-4 h-4"></i>
-          </button>
-        </form>
-        <p id="form-feedback" class="hidden mt-4 text-center font-mono text-xs text-emerald-400"></p>
+
+          <!-- GitHub Profile -->
+          <a href="https://github.com/justinarias25snfss-oss" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 flex items-center gap-4 transition group">
+            <div class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <i data-lucide="github" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-slate-500 block text-[10px]">GITHUB_PROFILE</span>
+              <span class="text-cyan-400 font-sans text-sm">github.com/justinarias25snfss-oss</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Transmission Form -->
+        <div class="lg:col-span-7 p-6 sm:p-8 rounded-xl bg-slate-900/80 border border-slate-800 shadow-2xl">
+          <form onsubmit="handleFormSubmit(event)" class="space-y-4 font-mono text-xs">
+            <div>
+              <label class="block text-slate-400 mb-1">SENDER_NAME:</label>
+              <input type="text" required placeholder="Name or Organization" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 font-sans text-sm" />
+            </div>
+            <div>
+              <label class="block text-slate-400 mb-1">SENDER_EMAIL:</label>
+              <input type="email" required placeholder="name@domain.com" class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 font-sans text-sm" />
+            </div>
+            <div>
+              <label class="block text-slate-400 mb-1">PAYLOAD_MESSAGE:</label>
+              <textarea rows="4" required placeholder="Describe the opportunity or project..." class="w-full px-4 py-3 rounded-lg bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 font-sans text-sm"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-95 text-slate-950 font-bold transition shadow-lg shadow-cyan-500/20 flex items-center justify-center gap-2 tracking-wider">
+              <span>TRANSMIT_DATA()</span>
+              <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </form>
+          <p id="form-feedback" class="hidden mt-4 text-center font-mono text-xs text-emerald-400"></p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -476,10 +541,8 @@
   </footer>
 
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Category Filter Handler
     function filterProjects(category) {
       const cards = document.querySelectorAll('.project-card');
       const buttons = document.querySelectorAll('.filter-btn');
@@ -504,7 +567,6 @@
       });
     }
 
-    // Demo Form Simulation Handler
     function handleFormSubmit(e) {
       e.preventDefault();
       const feedback = document.getElementById('form-feedback');
