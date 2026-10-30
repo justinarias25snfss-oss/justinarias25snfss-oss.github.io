@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer &amp; Tech Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * {
+      transition: background-color 0.25s ease, border-color 0.25s ease;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-mono text-sm shadow-lg shadow-blue-500/25">&lt;/&gt;</span>
+        Portfolio<span class="text-blue-500">.dev</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+        <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition shadow-md shadow-blue-600/30">
+          <i data-lucide="send" class="w-4 h-4"></i> Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/40 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Available for Projects &amp; OJT
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-3xl leading-tight">
+        Building functional <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">web apps, mobile tech</span> &amp; 3D systems.
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
+        Passionate Information Technology student with hands-on experience developing practical web platforms, interactive apps, and modern digital assets.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4 items-center">
+        <a href="#projects" class="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition shadow-lg shadow-blue-600/30 flex items-center gap-2">
+          View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#skills" class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-medium text-sm transition flex items-center gap-2">
+          <i data-lucide="code" class="w-4 h-4 text-slate-400"></i> Explore Tech Stack
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 border-t border-slate-800/80 bg-slate-900/50">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-400">About Me</h2>
+        <p class="text-3xl font-extrabold text-white mt-2">Pragmatic Developer with an Eye for Usability</p>
+        <p class="mt-4 text-slate-400 leading-relaxed">
+          I am an IT student focused on building responsive web solutions, mobile application logic, and integrated 3D visualizations. I enjoy solving real workflow challenges and turning project requirements into clean, maintainable user interfaces.
+        </p>
+        <div class="mt-6 grid grid-cols-2 gap-4">
+          <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60">
+            <p class="text-2xl font-bold text-blue-400">4th Year</p>
+            <p class="text-sm text-slate-400">BS Information Tech</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60">
+            <p class="text-2xl font-bold text-emerald-400">Jan 2027</p>
+            <p class="text-sm text-slate-400">Target OJT Start</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-800/40 border border-slate-700 shadow-xl">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <i data-lucide="terminal" class="w-5 h-5 text-blue-400"></i> Quick Highlights
+        </h3>
+        <ul class="space-y-3 text-sm text-slate-300">
+          <li class="flex items-start gap-3">
+            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span>Experience building responsive web interfaces using HTML, Tailwind CSS, and JavaScript.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span>Hands-on work with Android Studio (Java), cloud databases, and mobile APIs.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+            <span>3D asset production and topology optimization in Blender for real-time rendering.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-20 border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-wider text-blue-400">Portfolio</h2>
+          <p class="text-3xl font-extrabold text-white mt-2">Featured Projects</p>
+        </div>
+        <!-- Category Filter Buttons -->
+        <div class="mt-4 md:mt-0 flex flex-wrap gap-2" id="filter-buttons">
+          <button onclick="filterProjects('all')" class="filter-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white">All</button>
+          <button onclick="filterProjects('mobile')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Mobile &amp; AR</button>
+          <button onclick="filterProjects('web')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">Web</button>
+          <button onclick="filterProjects('3d')" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700">3D Assets</button>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid md:grid-cols-3 gap-6" id="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card group rounded-2xl bg-slate-800/60 border border-slate-700/60 p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300" data-category="mobile">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="smartphone" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Mobile &amp; AR</span>
+            <h3 class="text-xl font-bold text-white mt-1">RD Home AR Platform</h3>
+            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+              Augmented Reality preview system enabling customers to visualize custom furniture to-scale in their living rooms before buying.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">Android Studio</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">ARCore</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">Firebase</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs">
+            <span class="text-slate-400">Capstone Project</span>
+            <span class="text-blue-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">Details &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card group rounded-2xl bg-slate-800/60 border border-slate-700/60 p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300" data-category="web">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Web Application</span>
+            <h3 class="text-xl font-bold text-white mt-1">Responsive Catalog Portal</h3>
+            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+              Clean web dashboard and client storefront featuring category filtering, live search queries, and dynamic item modals.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">HTML5</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">Tailwind CSS</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">JavaScript</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs">
+            <span class="text-slate-400">Web Solution</span>
+            <span class="text-blue-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">Details &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card group rounded-2xl bg-slate-800/60 border border-slate-700/60 p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all duration-300" data-category="3d">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="box" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider">3D Modeling</span>
+            <h3 class="text-xl font-bold text-white mt-1">Optimized 3D Asset Library</h3>
+            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+              Low-poly, realistic PBR-textured furniture models and procedural items rigged with proper edge loops for real-time mobile rendering.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">Blender</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">glTF / GLB</span>
+              <span class="px-2.5 py-0.5 rounded-md text-xs bg-slate-900 text-slate-300 border border-slate-700">Topology</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs">
+            <span class="text-slate-400">Asset Pack</span>
+            <span class="text-blue-400 font-semibold flex items-center gap-1 group-hover:translate-x-1 transition-transform">Details &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-20 border-t border-slate-800/80 bg-slate-900/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-400">Capabilities</h2>
+        <p class="text-3xl font-extrabold text-white mt-2">Technical Skills &amp; Tools</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Frontend -->
+        <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800">
+          <div class="text-blue-400 font-bold mb-3 flex items-center gap-2">
+            <i data-lucide="layout" class="w-5 h-5"></i> Web Frontend
+          </div>
+          <ul class="text-sm text-slate-300 space-y-2">
+            <li>HTML5 / Semantic Markup</li>
+            <li>CSS3 / Tailwind CSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive UI Layouts</li>
+          </ul>
+        </div>
+
+        <!-- Mobile & Software -->
+        <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800">
+          <div class="text-emerald-400 font-bold mb-3 flex items-center gap-2">
+            <i data-lucide="cpu" class="w-5 h-5"></i> Mobile &amp; App Dev
+          </div>
+          <ul class="text-sm text-slate-300 space-y-2">
+            <li>Android Studio (Java)</li>
+            <li>Google ARCore</li>
+            <li>Firebase Realtime DB / Auth</li>
+            <li>REST API Integration</li>
+          </ul>
+        </div>
+
+        <!-- 3D & Design -->
+        <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800">
+          <div class="text-purple-400 font-bold mb-3 flex items-center gap-2">
+            <i data-lucide="layers" class="w-5 h-5"></i> 3D &amp; Creative
+          </div>
+          <ul class="text-sm text-slate-300 space-y-2">
+            <li>Blender 3D Modeling</li>
+            <li>Topology &amp; UV Mapping</li>
+            <li>Asset Export (.glb / .gltf)</li>
+            <li>Canva / Wireframing</li>
+          </ul>
+        </div>
+
+        <!-- Tools & Practices -->
+        <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-800">
+          <div class="text-amber-400 font-bold mb-3 flex items-center gap-2">
+            <i data-lucide="wrench" class="w-5 h-5"></i> Tools &amp; Practices
+          </div>
+          <ul class="text-sm text-slate-300 space-y-2">
+            <li>Git &amp; GitHub Versioning</li>
+            <li>Visual Studio / VS Code</li>
+            <li>ITSM Fundamentals</li>
+            <li>Agile Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20 border-t border-slate-800/80">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-400">Get In Touch</h2>
+        <p class="text-3xl font-extrabold text-white mt-2">Let's Connect</p>
+        <p class="text-slate-400 mt-2 text-sm">Have an opportunity, internship inquiry, or project in mind?</p>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700/60 shadow-xl">
+        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Your Name</label>
+              <input type="text" required placeholder="Name" class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">Your Email</label>
+              <input type="email" required placeholder="name@example.com" class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Message</label>
+            <textarea rows="4" required placeholder="Write your message here..." class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition shadow-md shadow-blue-600/30 flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i> Send Message
+          </button>
+        </form>
+        <p id="form-feedback" class="hidden mt-4 text-center text-sm font-medium text-emerald-400"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Developer Portfolio. Built with HTML, Tailwind CSS &amp; JavaScript.</p>
+      <div class="flex items-center gap-4">
+        <a href="#hero" class="hover:text-slate-300 transition-colors">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Load icons
+    lucide.createIcons();
+
+    // Category filter logic
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-blue-600', 'text-white');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+
+      if (event && event.target) {
+        event.target.classList.remove('bg-slate-800', 'text-slate-300');
+        event.target.classList.add('bg-blue-600', 'text-white');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Form submission feedback
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      feedback.textContent = 'Thank you! Your message has been sent successfully.';
+      feedback.classList.remove('hidden');
+      e.target.reset();
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
