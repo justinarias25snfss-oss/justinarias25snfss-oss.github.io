@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Justin Arias // IT &amp; Software Developer</title>
+  <title>Justin Arias // Systems, Software &amp; 3D</title>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Fonts: Space Grotesk & JetBrains Mono -->
+  <!-- Google Fonts: Space Grotesk & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,7 +26,6 @@
             cyber: {
               black: '#080c14',
               surface: '#0f172a',
-              card: 'rgba(15, 23, 42, 0.75)',
               border: '#1e293b',
               neon: '#00f2fe',
               emerald: '#10b981',
@@ -38,7 +38,6 @@
   </script>
 
   <style>
-    /* Cyber Grid Matrix Background */
     body {
       background-color: #060911;
       background-image: 
@@ -48,7 +47,6 @@
       background-size: 100% 100%, 40px 40px, 40px 40px;
     }
 
-    /* Glowing borders and accents */
     .glow-border {
       position: relative;
     }
@@ -57,7 +55,6 @@
       border-color: rgba(0, 242, 254, 0.4);
     }
 
-    /* Custom Terminal blinking cursor */
     .terminal-cursor {
       display: inline-block;
       width: 8px;
@@ -74,7 +71,7 @@
 </head>
 <body class="text-slate-200 font-sans antialiased selection:bg-cyan-500 selection:text-black">
 
-  <!-- TOP STATUS BAR -->
+  <!-- TOP SYSTEM STATUS BAR -->
   <div class="border-b border-slate-800/80 bg-slate-950/80 text-[11px] font-mono py-1.5 px-4 sticky top-0 z-50 backdrop-blur-md">
     <div class="max-w-6xl mx-auto flex items-center justify-between text-slate-400">
       <div class="flex items-center gap-3">
@@ -82,8 +79,8 @@
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
           SYS.STATUS: ONLINE
         </span>
-        <span class="hidden sm:inline text-slate-600">|</span>
-        <span class="hidden sm:inline text-slate-400">ROLE: BSIT CANDIDATE (STI LIPA)</span>
+        <span class="hidden sm:inline text-slate-700">|</span>
+        <span class="hidden sm:inline text-slate-400">ROLE: 4TH-YEAR BSIT (STI LIPA)</span>
       </div>
       <div class="flex items-center gap-4">
         <span class="text-cyan-400">OJT TARGET: JAN 2027</span>
@@ -101,66 +98,69 @@
         </div>
         <div>
           <span class="font-bold text-white tracking-wide block leading-tight">Justin Arias</span>
-          <span class="font-mono text-[10px] text-cyan-400 tracking-wider">DEV // ARCHITECT</span>
+          <span class="font-mono text-[10px] text-cyan-400 tracking-wider">DEV // SYSTEMS</span>
         </div>
       </a>
 
       <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-slate-400">
-        <a href="#about" class="hover:text-cyan-400 transition-colors">&lt;about /&gt;</a>
-        <a href="#projects" class="hover:text-cyan-400 transition-colors">&lt;projects /&gt;</a>
-        <a href="#skills" class="hover:text-cyan-400 transition-colors">&lt;tech_stack /&gt;</a>
-        <a href="#contact" class="hover:text-cyan-400 transition-colors">&lt;contact /&gt;</a>
+        <a href="#about" class="hover:text-cyan-400 transition-colors">// IDENTITY</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">// REPOSITORIES</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">// TECH_MATRIX</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">// TRANSMIT</a>
       </nav>
 
       <div class="flex items-center gap-3">
         <a href="#contact" class="px-4 py-2 rounded-lg bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-mono text-xs font-semibold tracking-wider transition">
-          EXECUTE_CONTACT()
+          CONNECT
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION WITH INTERACTIVE TERMINAL -->
   <section id="hero" class="relative pt-20 pb-16 md:pt-28 md:pb-24">
     <div class="max-w-6xl mx-auto px-4">
       
-      <!-- Interactive Terminal Card -->
+      <!-- Terminal Simulation Box -->
       <div class="rounded-xl border border-slate-800 bg-slate-950/80 shadow-2xl p-4 sm:p-6 mb-12 max-w-2xl font-mono text-xs">
         <div class="flex items-center justify-between pb-3 border-b border-slate-800/80 mb-4">
           <div class="flex items-center gap-2">
             <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
             <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
             <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
-            <span class="text-slate-500 ml-2">bash - session #402</span>
+            <span class="text-slate-500 ml-2">bash: justin@terminal ~</span>
           </div>
-          <span class="text-slate-600">utf-8</span>
+          <span class="text-slate-600">UTF-8</span>
         </div>
         <p class="text-slate-400">$ whoami</p>
-        <p class="text-emerald-400 mt-1">&gt; 4th-Year BSIT Student, Mobile &amp; Web Developer, 3D Enthusiast.</p>
+        <p class="text-emerald-400 mt-1">&gt; Justin Arias | BSIT Student, Mobile &amp; Web Developer, 3D Modeler.</p>
         <p class="text-slate-400 mt-3">$ cat core_focus.json</p>
         <p class="text-cyan-400 mt-1 leading-relaxed">
-          { "focus": ["AR Solutions", "Android Studio (Java)", "Blender Modeling", "Responsive Web Interfaces"] }
+          { "focus": ["ARCore Mobile Apps", "Web Development", "Blender 3D Mesh Topology", "Cloud/Firebase DB"] }
         </p>
-        <p class="text-slate-400 mt-3">$ ping status... <span class="text-slate-200">ready for collaboration</span><span class="terminal-cursor ml-1"></span></p>
+        <p class="text-slate-400 mt-3">$ ping status... <span class="text-slate-200">systems online, open to opportunities</span><span class="terminal-cursor ml-1"></span></p>
       </div>
 
       <div class="max-w-3xl">
-        <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
-          Engineering reliable code &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400">interactive digital experiences.</span>
+        <div class="inline-block px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono text-xs font-semibold tracking-wider mb-6">
+          4TH YEAR BS INFORMATION TECH // OJT READY 2027
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          ARCHITECTING <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400">SMART SYSTEMS</span> &amp; 3D EXPERIENCES.
         </h1>
         <p class="mt-6 text-base sm:text-lg text-slate-400 leading-relaxed max-w-2xl">
-          Focused on building clean frontends, scalable mobile applications, and real-time 3D assets that bridge functional software engineering with user-centric UI.
+          Information Technology student focused on full-stack web solutions, augmented reality logic with Google ARCore &amp; Java, and real-time 3D asset optimization in Blender.
         </p>
       </div>
 
       <div class="mt-8 flex flex-wrap gap-4 items-center font-mono text-xs">
         <a href="#projects" class="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-95 text-slate-950 font-bold transition shadow-lg shadow-cyan-500/20 flex items-center gap-2">
-          <span>VIEW_PROJECTS</span>
+          <span>EXPLORE REPOSITORIES</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
-        <a href="#skills" class="px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition flex items-center gap-2">
-          <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i>
-          <span>EXPLORE_STACK</span>
+        <a href="#contact" class="px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 transition flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+          <span>TRANSMIT MESSAGE</span>
         </a>
       </div>
     </div>
@@ -170,24 +170,64 @@
   <section class="border-y border-slate-800/80 bg-slate-950/40 py-6 font-mono text-xs">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
       <div class="border-l-2 border-cyan-500 pl-4">
-        <span class="text-slate-500 block">EDUCATION</span>
+        <span class="text-slate-500 block">INSTITUTION</span>
         <span class="text-lg font-bold text-white font-sans">STI College</span>
         <span class="text-cyan-400 block">BSIT 4th Year</span>
       </div>
       <div class="border-l-2 border-emerald-500 pl-4">
         <span class="text-slate-500 block">PRIMARY FOCUS</span>
-        <span class="text-lg font-bold text-white font-sans">Full Stack / Mobile</span>
-        <span class="text-emerald-400 block">Android &amp; Web</span>
+        <span class="text-lg font-bold text-white font-sans">Full Stack &amp; Mobile</span>
+        <span class="text-emerald-400 block">Web &amp; Android Apps</span>
       </div>
       <div class="border-l-2 border-violet-500 pl-4">
         <span class="text-slate-500 block">SPECIALIZATION</span>
-        <span class="text-lg font-bold text-white font-sans">AR &amp; 3D Assets</span>
+        <span class="text-lg font-bold text-white font-sans">AR &amp; 3D Graphics</span>
         <span class="text-violet-400 block">Blender + ARCore</span>
       </div>
       <div class="border-l-2 border-amber-500 pl-4">
-        <span class="text-slate-500 block">DEPLOYMENT STATUS</span>
-        <span class="text-lg font-bold text-white font-sans">Open for OJT</span>
-        <span class="text-amber-400 block">Starts Jan 2027</span>
+        <span class="text-slate-500 block">AVAILABILITY</span>
+        <span class="text-lg font-bold text-white font-sans">Ready for OJT</span>
+        <span class="text-amber-400 block">Jan 2027 Inbound</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 border-b border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;identity /&gt;</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Pragmatic Developer &amp; 3D Enthusiast</h2>
+        <p class="mt-4 text-slate-400 leading-relaxed text-sm">
+          Currently in my fourth year pursuing a Bachelor of Science in Information Technology at STI College Lipa. I specialize in designing and engineering practical applications—ranging from mobile AR platforms and cloud-connected portals to high-performance responsive web interfaces.
+        </p>
+        <p class="mt-3 text-slate-400 leading-relaxed text-sm">
+          Beyond writing frontend markup and backend endpoints, I produce clean 3D assets in Blender with optimized geometry and proper edge loops tailored for real-time mobile and web rendering engines.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-950/70 border border-slate-800 shadow-xl font-mono text-xs">
+        <h3 class="text-sm font-bold text-white mb-4 flex items-center gap-2">
+          <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i> Core Capabilities
+        </h3>
+        <ul class="space-y-3 text-slate-300">
+          <li class="flex items-start gap-2.5">
+            <span class="text-cyan-400 font-bold">&gt;</span>
+            <span><strong>Web Applications:</strong> Semantic HTML5, CSS3, modern JavaScript, and Tailwind CSS.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-400 font-bold">&gt;</span>
+            <span><strong>Mobile Systems:</strong> Android Studio development with Java, Firebase DB, and Google ARCore.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-violet-400 font-bold">&gt;</span>
+            <span><strong>3D Asset Creation:</strong> Blender modeling, UV unwrapping, topology optimization, and GLB exports.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-amber-400 font-bold">&gt;</span>
+            <span><strong>Practices:</strong> ITSM principles, Git/GitHub version control, and cloud resource architecture.</span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -197,8 +237,8 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
         <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;repository /&gt;</span>
-          <h2 class="text-3xl font-bold text-white">Engineered Builds &amp; Demos</h2>
+          <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;repositories /&gt;</span>
+          <h2 class="text-3xl font-bold text-white">Featured Builds</h2>
         </div>
         
         <!-- Filter Pills -->
@@ -210,76 +250,85 @@
         </div>
       </div>
 
-      <!-- Project Cards -->
-      <div class="grid md:grid-cols-3 gap-6" id="projects-grid">
+      <!-- Project Cards Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
         
-        <!-- Project 1 -->
-        <div class="project-card glow-border rounded-xl bg-slate-900/60 border border-slate-800 p-6 flex flex-col justify-between transition-all duration-300" data-category="mobile">
+        <!-- PROJECT 1: CAPSTONE SYSTEM (PRIMARY 2-COLUMN CARD) -->
+        <div class="project-card glow-border rounded-xl bg-slate-900/70 border border-slate-800 p-6 flex flex-col justify-between transition-all duration-300 md:col-span-2 lg:col-span-2" data-category="web mobile">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-[11px] font-mono text-cyan-400 px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20">AR // MOBILE</span>
-              <i data-lucide="box" class="w-5 h-5 text-slate-500"></i>
+              <div class="flex items-center gap-2">
+                <span class="text-[11px] font-mono text-cyan-400 px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 font-bold tracking-wider">CAPSTONE // PRIMARY</span>
+                <span class="text-[11px] font-mono text-emerald-400 px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> LIVE PLATFORM
+                </span>
+              </div>
+              <span class="font-mono text-xs text-slate-500">RDHome Furniture</span>
             </div>
-            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400">RD Home AR Platform</h3>
-            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
-              Augmented Reality mobile application for RDH Furniture Trading. Enables true-to-scale AR previewing of custom furniture items in local room spaces before order placement.
+
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">RDHome — Augmented Reality &amp; Furniture Inquiry Platform</h3>
+            <p class="text-sm text-slate-300 mt-3 leading-relaxed">
+              "Visualize Before You Bring It Home." A capstone system combining a customer-facing web catalog and inquiry platform with an ARCore mobile application to let clients accurately visualize true-to-scale 3D furniture models inside their spaces before buying.
             </p>
+
+            <div class="mt-4 grid sm:grid-cols-2 gap-3 text-xs font-mono text-slate-400">
+              <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80">
+                <span class="text-cyan-400 block font-semibold mb-1">&gt; Web &amp; Portal Architecture:</span>
+                Product catalog, customer inquiry dispatch, and administrative login portal.
+              </div>
+              <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80">
+                <span class="text-emerald-400 block font-semibold mb-1">&gt; AR Engine &amp; Data:</span>
+                Google ARCore surface tracking, real-time Firebase DB, and optimized 3D glTF models.
+              </div>
+            </div>
+
             <div class="mt-5 flex flex-wrap gap-1.5 font-mono text-[11px]">
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Android Studio</span>
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Java</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">PHP / Web</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">JavaScript</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Tailwind CSS</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Android Studio (Java)</span>
               <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">ARCore</span>
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Firebase</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Blender 3D</span>
             </div>
           </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
-            <span class="text-slate-500">CAPSTONE_DEFENDED</span>
-            <span class="text-cyan-400 font-semibold flex items-center gap-1">VIEW_SPECS &rarr;</span>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4 text-xs font-mono">
+            <div class="flex items-center gap-3">
+              <a href="http://rdhome.world/rdhome%20web/rdhome.php" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition flex items-center gap-2 shadow-md shadow-cyan-500/20">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>LAUNCH_LIVE_SITE</span>
+              </a>
+
+              <a href="https://github.com/justinarias25snfss-oss" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition flex items-center gap-1.5 border border-slate-700">
+                <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                <span>GITHUB_REPO</span>
+              </a>
+            </div>
+
+            <span class="text-slate-500">CAPSTONE_DEFENDED_2026</span>
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div class="project-card glow-border rounded-xl bg-slate-900/60 border border-slate-800 p-6 flex flex-col justify-between transition-all duration-300" data-category="web">
+        <!-- PROJECT 2: 3D ASSET PACK -->
+        <div class="project-card glow-border rounded-xl bg-slate-900/60 border border-slate-800 p-6 flex flex-col justify-between transition-all duration-300" data-category="3d">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-[11px] font-mono text-sky-400 px-2.5 py-1 rounded-md bg-sky-500/10 border border-sky-500/20">FRONTEND // UI</span>
-              <i data-lucide="layout" class="w-5 h-5 text-slate-500"></i>
+              <span class="text-[11px] font-mono text-purple-400 px-2.5 py-1 rounded-md bg-purple-500/10 border border-purple-500/20">3D ASSETS</span>
+              <i data-lucide="layers" class="w-5 h-5 text-slate-500"></i>
             </div>
-            <h3 class="text-xl font-bold text-white">Responsive Client Catalog</h3>
+            <h3 class="text-xl font-bold text-white">Optimized 3D Asset Pipeline</h3>
             <p class="text-sm text-slate-400 mt-3 leading-relaxed">
-              High-performance web dashboard featuring client-side query filtering, modal inspectors, and dynamic UI state handling with zero bloated frontend runtimes.
+              Custom low-poly mesh modeling, PBR texturing, and armature rigging in Blender. Tailored for zero frame-drops and lightweight glTF/GLB web and mobile rendering.
             </p>
             <div class="mt-5 flex flex-wrap gap-1.5 font-mono text-[11px]">
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">HTML5</span>
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Tailwind CSS</span>
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Vanilla JS</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Blender</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Mesh Topology</span>
+              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">GLB / glTF</span>
             </div>
           </div>
           <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
             <span class="text-slate-500">PRODUCTION_READY</span>
-            <span class="text-sky-400 font-semibold flex items-center gap-1">VIEW_SPECS &rarr;</span>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card glow-border rounded-xl bg-slate-900/60 border border-slate-800 p-6 flex flex-col justify-between transition-all duration-300" data-category="3d">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-[11px] font-mono text-purple-400 px-2.5 py-1 rounded-md bg-purple-500/10 border border-purple-500/20">GRAPHICS // 3D</span>
-              <i data-lucide="layers" class="w-5 h-5 text-slate-500"></i>
-            </div>
-            <h3 class="text-xl font-bold text-white">Real-Time 3D Asset Rigging</h3>
-            <p class="text-sm text-slate-400 mt-3 leading-relaxed">
-              Custom low-poly mesh topology, armature rigging, and PBR texturing in Blender. Designed specifically for low draw-calls and seamless mobile glTF/GLB web integration.
-            </p>
-            <div class="mt-5 flex flex-wrap gap-1.5 font-mono text-[11px]">
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Blender</span>
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">Topology</span>
-              <span class="px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">glTF / GLB</span>
-            </div>
-          </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
-            <span class="text-slate-500">ASSET_PIPELINE</span>
-            <span class="text-purple-400 font-semibold flex items-center gap-1">VIEW_SPECS &rarr;</span>
+            <span class="text-purple-400 font-semibold flex items-center gap-1">DETAILS &rarr;</span>
           </div>
         </div>
 
@@ -291,16 +340,16 @@
   <section id="skills" class="py-20 border-t border-slate-800/80 bg-slate-950/60">
     <div class="max-w-6xl mx-auto px-4">
       <div class="max-w-xl mb-14">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;stack_inventory /&gt;</span>
+        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;tech_matrix /&gt;</span>
         <h2 class="text-3xl font-bold text-white">Technical Arsenal</h2>
-        <p class="text-sm text-slate-400 mt-2">Tools, runtimes, and engineering frameworks utilized across development pipelines.</p>
+        <p class="text-sm text-slate-400 mt-2">Tools, frameworks, and pipelines utilized in academic and production environments.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <div class="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
           <div class="text-cyan-400 font-mono text-xs font-bold uppercase mb-4 flex items-center gap-2">
-            <i data-lucide="terminal" class="w-4 h-4"></i> Frontend
+            <i data-lucide="terminal" class="w-4 h-4"></i> Web Frontend
           </div>
           <div class="space-y-3 font-mono text-xs">
             <div>
@@ -352,7 +401,7 @@
               <div class="w-full bg-slate-800 h-1 rounded"><div class="bg-purple-400 h-1 rounded" style="width: 75%"></div></div>
             </div>
             <div>
-              <div class="flex justify-between mb-1"><span>UI / UX Prototyping</span><span class="text-purple-400">85%</span></div>
+              <div class="flex justify-between mb-1"><span>UI / UX Wireframing</span><span class="text-purple-400">85%</span></div>
               <div class="w-full bg-slate-800 h-1 rounded"><div class="bg-purple-400 h-1 rounded" style="width: 85%"></div></div>
             </div>
           </div>
@@ -382,13 +431,13 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
+  <!-- TRANSMIT / CONTACT FORM -->
   <section id="contact" class="py-24 border-t border-slate-800/80">
     <div class="max-w-2xl mx-auto px-4">
       <div class="text-center mb-10">
         <span class="text-xs font-mono uppercase tracking-widest text-cyan-400 block mb-1">&lt;transmit /&gt;</span>
         <h2 class="text-3xl font-bold text-white">Initialize Connection</h2>
-        <p class="text-sm text-slate-400 mt-2">Ready for software internships, OJT placements, or collaborative system development.</p>
+        <p class="text-sm text-slate-400 mt-2">Open for OJT placements, internships, and collaborative software projects.</p>
       </div>
 
       <div class="p-6 sm:p-8 rounded-xl bg-slate-900/80 border border-slate-800 shadow-2xl">
@@ -427,6 +476,7 @@
   </footer>
 
   <script>
+    // Initialize Lucide Icons
     lucide.createIcons();
 
     // Category Filter Handler
@@ -445,7 +495,8 @@
       }
 
       cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
+        const cardCats = card.dataset.category.split(' ');
+        if (category === 'all' || cardCats.includes(category)) {
           card.classList.remove('hidden');
         } else {
           card.classList.add('hidden');
@@ -453,7 +504,7 @@
       });
     }
 
-    // Interactive Demo Form Handler
+    // Demo Form Simulation Handler
     function handleFormSubmit(e) {
       e.preventDefault();
       const feedback = document.getElementById('form-feedback');
